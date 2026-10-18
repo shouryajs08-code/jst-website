@@ -537,9 +537,6 @@ const PRODUCTS = [{"c": "spectro", "b": "Elico", "n": "UV-Visible Spectrophotome
         html += '<div class="detail-section-title">Notable Features</div>';
         html += '<ul class="detail-features">'+d.features.map(function(f){ return '<li>'+esc(f)+'</li>'; }).join('')+'</ul>';
       }
-      if(d.source_url){
-        html += '<div class="detail-source">Sourced from the manufacturer’s own product page: <a href="'+esc(d.source_url)+'" target="_blank" rel="noopener">'+esc(d.source_url)+'</a></div>';
-      }
     } else {
       html += '<div class="detail-fallback">We haven’t published a full line-item datasheet for this product yet — but we carry it, in the '+esc(p.s)+' range. Call or email us and we’ll send the exact specification sheet and current availability within the day.</div>';
     }
